@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>切片工具 (2.0) &copy; copyright by gy</title>
+        <link rel="stylesheet" href="lib/easyui/themes/black/easyui.css"/>
+        <link rel="stylesheet" href="lib/ol2/theme/default/style.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+        <script src="lib/jquery-1.7.2.min.js"></script>
+        <script src="lib/easyui/jquery.easyui.min.js"></script>
+        <script src="lib/easyui/easyui-lang-zh_CN.js"></script>
+        <script src="lib/autocomplate/autocomplate.js"></script>
+        <script src="lib/ol2/OpenLayers.light.js"></script>
+        <script src="lib/ol2/TMS.js"></script>
+        <script src="lib/ol2/WMTS.js"></script>
+        <script src="lib/HighCharts/js/highcharts.js"></script>
+        <script src="lib/HighCharts/js/themes/gray.js"></script>
+
+        <script src="scripts/CT.js"></script>
+        <script src="scripts/Projections.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/views/gridset.js"></script>
+        <script src="scripts/views/servicetile.js"></script>
+        <script src="scripts/views/imgtile.js"></script>
+        <script src="scripts/views/multiimgtile.js"></script>
+        <script src="scripts/views/preview.js"></script>
+        <script src="scripts/views/imagecompress.js"></script>
+        <script src="scripts/views/downloadtiles.js"></script>
+        <script src="scripts/views.js"></script>
+        <script src="scripts/tile/ServiceTile.js"></script>
+        <script src="scripts/tile/RasterTile.js"></script>
+        <script src="scripts/service.js"></script>
+	</head>
+
+	<body>
+		<div id="header">
+			<span class="logo">切片工具(2.0) &copy; gy</span>
+            <div id="winbar">
+                <div id="closebt" title="退出系统"></div>
+                <div id="minbt" title="最小化"></div>
+                <div id="debugtool" title="调试工具"></div>
+                <div id="winreload" title="重新加载"></div>
+                <div id="sysconfig" title="系统配置"></div>
+                <div id="userinfo"></div>
+            </div>
+		</div>
+
+		<div id="section" class="client">
+			<div class="menu_nav client">
+				<div class="nav_item" data-view="gridset">
+                    <i class="ct_icon icon_grid"></i>
+                    <span>网格配置</span>
+				</div>
+                <div class="nav_item" data-view="servicetile">
+                    <i class="ct_icon icon_server"></i>
+                    <span>服务切片</span>
+                </div>
+                <div class="nav_item" data-view="imgtile">
+                    <i class="ct_icon icon_raster"></i>
+                    <span>影像切片</span>
+                </div>
+                <div class="nav_item" data-view="multiimgtile">
+                    <i class="ct_icon icon_raster"></i>
+                    <span>多影像切片</span>
+                </div>
+                <div class="nav_item" data-view="downloadtiles">
+                    <i class="ct_icon icon_download"></i>
+                    <span>多影像切片</span>
+                </div>
+                <div class="nav_item" data-view="tilepreview">
+                    <i class="ct_icon icon_preview"></i>
+                    <span>切片预览</span>
+                </div>
+                <div class="nav_item" data-view="imagecompress">
+                    <i class="ct_icon icon_compress"></i>
+                    <span>压缩图片</span>
+                </div>
+			</div>
+			<div class="main client">
+				<div id="GridSetView" class="ct_view client" style="display: none;"></div>
+                <div id="ServiceTileView" class="ct_view client" style="display: none;"></div>
+                <div id="ImgTileView" class="ct_view client" style="display: none;"></div>
+                <div id="MultiImgTileView" class="ct_view client" style="display: none;"></div>
+                <div id="TilePreview" class="ct_view client" style="display: none;"></div>
+                <div id="ImageCompress" class="ct_view client" style="display: none;"></div>
+                <div id="DownloadTiles" class="ct_view client" style="display: none;"></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "CTile",
+  "description": "gis tile util",
+  "version": "2.0",
+  "main": "index.html",
+  "window": {
+    "icon": "logo.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 1000,
+    "height": 800,
+    "position": "center",
+    "resizable": false
+  }
+}
