@@ -232,11 +232,15 @@ body{
     position: relative;
 }
 
-#st_pathhelper,#st_importhelper,#st_hosthelper{
+#st_pathhelper,#st_importhelper,#st_hosthelper,#dts_pathhelper{
     position: relative;
     opacity: 0;
     left: 110px;
     top: -26px;
+}
+#dts_pathhelper {
+    left: -300px;
+    top: 0;
 }
 
 #load_layer_config_helper{
